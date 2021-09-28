@@ -1,0 +1,16 @@
+{
+    "name": "wallace/remita_api",
+    "description": "This servers all Remita API calls",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wallace Myem",
+            "email": "wallacemyem@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "pear/http_request2": ">=2.4"
+    }
+}
