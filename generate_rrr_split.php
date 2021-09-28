@@ -1,5 +1,9 @@
 <?php
 
+// Our 'Generate RRR- Split Payment' API can be implemented when the total
+// amount collected from your customer is to be split across more than one
+// beneficiary account and there are no custom fields associated with the RRR's that are being generated.
+
 require_once 'config/config.php';
 
     

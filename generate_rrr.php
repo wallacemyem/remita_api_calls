@@ -1,5 +1,14 @@
 <?php
 
+// This is the standard RRR generation API. 
+// It is implemented when the total amount collected from your customer is expected 
+// to go into one beneficiary account and there are no custom fields associated with 
+// the RRR's that are being generated.
+
+// Custom fields are additional fields associated with a service type. 
+// Service types the are your products/services that you have setup on your Remita profile 
+// for which user's will be making payments to you.
+
 require_once 'config/config.php';
 
     
