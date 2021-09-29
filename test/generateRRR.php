@@ -15,7 +15,17 @@ $data = array(
 
 $get_details = generateSplitRRR($data);
 
-$decode = json_decode($get_details, true);
-echo $get_details;
+$jsonData = substr($get_details, 7, -1);
+$response = json_decode($jsonData, true);
+
+//$decode = json_decode($get_details, true);
+echo $jsonData; 
+echo "\r\n";
+echo $response["statuscode"];
+echo "\r\n";
+echo $response["RRR"];
+echo "\r\n";
+echo $response["status"];
+echo "\r\n";
 
 ;?>

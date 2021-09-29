@@ -11,7 +11,6 @@ function generateSplitRRR($data){
         $api_hash = hash('sha512', MERCHANT_ID . SERVICE_TYPE_ID . $data['orderId'] . $data['totalAmount'] . API_KEY);
 
         $curl = curl_init();
-        $curl = curl_init();
 
         curl_setopt_array($curl, array(
         CURLOPT_URL => ''.BASE_URL.'/echannelsvc/merchant/api/paymentinit',
