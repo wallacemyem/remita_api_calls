@@ -15,7 +15,7 @@ function check_trnx_orderid($orderId){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://remitademo.net/remita/exapp/api/v1/send/api/echannelsvc/'.MERCHANT_ID.'/'.$orderId.'/'.$api_hash.'/orderstatus.reg',
+    CURLOPT_URL => ''.CHECK_URL_ORDERID.''.MERCHANT_ID.'/'.$orderId.'/'.$api_hash.'/orderstatus.reg',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,

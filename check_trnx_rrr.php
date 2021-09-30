@@ -15,7 +15,7 @@ function check_trnx_rrr($rrr){
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-        CURLOPT_URL => 'http://www.remitademo.net/remita/ecomm/'.MERCHANT_ID.'/'.$rrr.'/'.$api_hash.'/status.reg',
+        CURLOPT_URL => ''.CHECK_URL_RRR.''.MERCHANT_ID.'/'.$rrr.'/'.$api_hash.'/status.reg',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
