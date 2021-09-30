@@ -1,6 +1,8 @@
 <?php
 
 require_once '../generate_rrr_split.php';
+require_once '../check_connection.php';
+
 $orderId = mt_rand() . date('YmdHis');
 
 $data = array(
@@ -27,5 +29,10 @@ echo $response["RRR"];
 echo "\r\n";
 echo $response["status"];
 echo "\r\n";
+if (is_connected() === true){
+    echo "true";
+}else{
+    echo "false";
+}
 
 ;?>
