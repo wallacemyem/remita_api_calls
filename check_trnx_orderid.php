@@ -25,7 +25,7 @@ function check_trnx_orderid($orderId){
     CURLOPT_CUSTOMREQUEST => 'GET',
     CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: remitaConsumerKey={{merchantId}},remitaConsumerToken={{apiHash}}'
+        'Authorization: remitaConsumerKey='.MERCHANT_ID.',remitaConsumerToken='.$api_hash.''
     ),
     ));
 
