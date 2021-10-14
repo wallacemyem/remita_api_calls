@@ -39,6 +39,9 @@ function generateSplitRRR($data){
         $response = curl_exec($curl);
 
         curl_close($curl);
-        return $response;
+
+        $jsonData = substr($response, 7, -1);
+
+        return $jsonData;
 
 }
