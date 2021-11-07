@@ -1,6 +1,6 @@
 {
     "name": "wallace/remita_api",
-    "description": "This servers all Remita API calls",
+    "description": "This serves all Remita API calls",
     "type": "library",
     "license": "MIT",
     "authors": [
